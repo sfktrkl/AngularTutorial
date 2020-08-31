@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Tutorial2": {
+    "Tutorial": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Tutorial2",
+            "outputPath": "dist/Tutorial",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Tutorial2:build"
+            "browserTarget": "Tutorial:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Tutorial2:build:production"
+              "browserTarget": "Tutorial:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Tutorial2:build"
+            "browserTarget": "Tutorial:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Tutorial2:serve"
+            "devServerTarget": "Tutorial:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Tutorial2:serve:production"
+              "devServerTarget": "Tutorial:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "Tutorial2"
+  "defaultProject": "Tutorial"
 }
