@@ -52,3 +52,31 @@
 <button (click)="getAName('A Name')">(click)="getAName('A Name')"</button>
 <!-- myName property of the component will go to the function -->
 <button (click)="getAName(myName)">(click)="getAName(myName)"</button>
+
+<!-- Angular events -->
+<h1>Angular Events</h1>
+<!-- Call the function at every click event -->
+<button (click)="myEvent('click')">(click)="myEvent('click')"</button>
+<!-- Call the function at every key up event -->
+<p>Event keyup</p>
+<input type="text" (keyup)="myEvent('keyup')" /> 
+<!-- Get the text box value with an id (#inputValue) -->
+<p>Get the text box value</p>
+<input type="text" #inputValue (keyup)="myEvent(inputValue.value)" /> 
+<!-- Call the function at every key down event -->
+<p>Event keydown</p>
+<input type="text" #inputValue2 (keydown)="myEvent(inputValue2.value)" /> 
+<!-- Call the function with a specific key press -->
+<p>Event keyup.enter</p>
+<input type="text" #inputValue3 (keyup.enter)="myEvent(inputValue3.value)" /> 
+<p>Event keyup.space</p>
+<input type="text" #inputValue4 (keyup.space)="myEvent(inputValue4.value)" /> 
+<!-- When clicked outside the text box blur event is called -->
+<p>Event blur (click outside the text box)</p>
+<input type="text" (blur)="myEvent('')" />
+<!-- Call function when cursor hover over the header -->
+<h1 (mouseover)="myEvent('')" style="background-color: blue;">mouseover</h1>
+<!-- Call function when cursor leaves the header -->
+<h1 (mouseleave)="myEvent('')" style="background-color: red;">mouseleave</h1>
+<!-- Possible to use different events at the same time -->
+<h1 (mouseleave)="myEvent('')" (mouseover)="myEvent('')" style="background-color: green;">mouseover and mouseleave</h1>

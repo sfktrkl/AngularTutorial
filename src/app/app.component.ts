@@ -24,4 +24,8 @@ export class AppComponent {
   getAName(name) { alert(name); }
   // Create a propery which will be used in the getAName() function
   myName = 'My Name';
+
+  // Create a function to call with events
+  myEvent(input) { console.warn(event.type + ": " + input); }
+
 }
