@@ -43,3 +43,12 @@
 <h1>Angular Modules</h1>
 <app-login></app-login>
 <app-signup></app-signup>
+
+<!-- Angular Call functions -->
+<h1>Angular Call Functions</h1>
+<!-- Define a click event (click) -->
+<button (click)="getTheName()">(click)="getTheName()"</button>
+<!-- Pass a parameter to the function -->
+<button (click)="getAName('A Name')">(click)="getAName('A Name')"</button>
+<!-- myName property of the component will go to the function -->
+<button (click)="getAName(myName)">(click)="getAName(myName)"</button>

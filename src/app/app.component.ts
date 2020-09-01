@@ -17,4 +17,11 @@ export class AppComponent {
   myObj = { name: 'Safak', age: 20 }      // Angular object
   myArr = ['Sfk', 'trkl'];                // Angular array
   siteUrl = window.location.href          // Access window object
+
+  // Create a function to call with a button
+  getTheName() { alert('The Name'); }
+  // Create a function with a parameter
+  getAName(name) { alert(name); }
+  // Create a propery which will be used in the getAName() function
+  myName = 'My Name';
 }
