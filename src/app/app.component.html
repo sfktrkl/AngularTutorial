@@ -90,3 +90,18 @@
 <p>{{currentValue}}</p>
 <input type="text" #inputBox />
 <button (click)="setValue(inputBox.value)">(click)=setValue(inputBox.value)</button>
+
+<!-- Property Binding -->
+<h1>Property Binding</h1>
+<p>[value] = "bindName" value = "{{'bindName'}}"</p>
+<!-- Use property binding-->
+<input type="text" [value]="bindName" />
+<!-- Use interpolation-->
+<input type="text" value="{{bindName}}" />
+
+<!-- Property binding can change this disable attribute -->
+<p>Disable or enable the input boxes using the button</p>
+<input type="text" [disabled]="enabled" />
+<!-- Interpolation cannot change this disable attribute -->
+<input type="text" disabled="{{enabled}}" />
+<button (click)="enableBox()">(click)="enableBox()"</button>

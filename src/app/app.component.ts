@@ -34,4 +34,9 @@ export class AppComponent {
   setValue(value) { this.currentValue = value; }
   currentValue = 'Set the value of this paragraph by using the button';
 
+  // Create to property to bind an html element
+  bindName = 'Bounded name';
+  // Create a property which will be used in the disable attribute of the input boxes
+  enabled = true;
+  enableBox() { this.enabled = !this.enabled; }
 }
