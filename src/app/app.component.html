@@ -142,3 +142,22 @@
   <p style="color: blue;" *ngSwitchCase="'blue'">Blue</p>
   <p style="color: purple;" *ngSwitchDefault>Default</p>
 </div>
+
+<!-- Angular for loop -->
+<h1>Angular For Loop</h1>
+<!-- Use strings -->
+<p *ngFor="let item of numbers">{{item}}</p>
+<!-- Use objects -->
+<p *ngFor="let item of objects">name: {{item.name}}, age:{{item.age}}</p>
+<!-- Use a table element -->
+<table border="1">
+  <tr>
+    <td>name</td>
+    <td>age</td>
+  </tr>
+  <tr *ngFor="let item of objects">
+    <td>{{item.name}}</td>
+    <td>{{item.age}}</td>
+  </tr>
+</table>
+

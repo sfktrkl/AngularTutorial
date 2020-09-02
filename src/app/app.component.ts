@@ -45,4 +45,13 @@ export class AppComponent {
 
   // Create a property to use in switch-case
   color = 'pink';
+
+  // Create arrays to use in loops
+  numbers = [1, 2, 3, 4];
+  objects = [
+    { name: 'a', age: 1 },
+    { name: 'b', age: 2 },
+    { name: 'c', age: 3 },
+    { name: 'd', age: 4 }
+  ];
 }
