@@ -80,3 +80,13 @@
 <h1 (mouseleave)="myEvent('')" style="background-color: red;">mouseleave</h1>
 <!-- Possible to use different events at the same time -->
 <h1 (mouseleave)="myEvent('')" (mouseover)="myEvent('')" style="background-color: green;">mouseover and mouseleave</h1>
+
+<!-- Get input box value -->
+<h1>Get Input Box Value</h1>
+<p>getValue($event.target.value)</p>
+<input type="text" (keyup)="getValue($event.target.value)" />
+
+<!-- Set the value of the paragraph using the button -->
+<p>{{currentValue}}</p>
+<input type="text" #inputBox />
+<button (click)="setValue(inputBox.value)">(click)=setValue(inputBox.value)</button>

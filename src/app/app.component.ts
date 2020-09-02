@@ -28,4 +28,10 @@ export class AppComponent {
   // Create a function to call with events
   myEvent(input) { console.warn(event.type + ": " + input); }
 
+  // Create a function to get value of the input box
+  getValue(value) { console.warn(value); }
+  // Create a function to set value of the property
+  setValue(value) { this.currentValue = value; }
+  currentValue = 'Set the value of this paragraph by using the button';
+
 }
