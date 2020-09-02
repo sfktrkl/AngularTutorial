@@ -39,4 +39,7 @@ export class AppComponent {
   // Create a property which will be used in the disable attribute of the input boxes
   enabled = true;
   enableBox() { this.enabled = !this.enabled; }
+
+  // Create a property to use in conditional statements
+  show = true;
 }

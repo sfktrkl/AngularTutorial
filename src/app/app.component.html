@@ -105,3 +105,31 @@
 <!-- Interpolation cannot change this disable attribute -->
 <input type="text" disabled="{{enabled}}" />
 <button (click)="enableBox()">(click)="enableBox()"</button>
+
+<!-- Angular conditions -->
+<h1>Angular Conditions</h1>
+<!-- Create if and else templates-->
+<ng-template #ifBlock>
+  <p>If block</p>
+</ng-template>
+<ng-template #elseBlock>
+  <p>Else block</p>
+</ng-template>
+<!-- Create paragraphs using conditional statemets -->
+<!-- If block-->
+<p *ngIf="show">If block</p>
+<!-- Else block -->
+<p *ngIf="!show else elseBlock"></p>
+<!-- If and Else block-->
+<p *ngIf="show then ifBlock else elseBlock"></p>
+
+<!-- Use property binding -->
+<ng-template [ngIf]="show">
+  <p>ElseIf block</p>
+</ng-template>
+<ng-template [ngIf]="!show == false">
+  <p>ElseIf block</p>
+</ng-template>
+<ng-template [ngIf]="show != null">
+  <p>ElseIf block</p>
+</ng-template>
