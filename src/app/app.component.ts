@@ -42,4 +42,7 @@ export class AppComponent {
 
   // Create a property to use in conditional statements
   show = true;
+
+  // Create a property to use in switch-case
+  color = 'pink';
 }

@@ -133,3 +133,12 @@
 <ng-template [ngIf]="show != null">
   <p>ElseIf block</p>
 </ng-template>
+
+<!-- Angular switch-case -->
+<h1>Angular Switch-Case</h1>
+<div [ngSwitch]="color">
+  <p style="color: red;" *ngSwitchCase="'red'">Red</p>
+  <p style="color: green;" *ngSwitchCase="'green'">Green</p>
+  <p style="color: blue;" *ngSwitchCase="'blue'">Blue</p>
+  <p style="color: purple;" *ngSwitchDefault>Default</p>
+</div>
