@@ -1,0 +1,12 @@
+a{
+  background-color: skyblue;
+  /* Align text to center */
+  text-align: center;
+  /* Fix the position, so it will always be in the bottom */
+  position: fixed;
+  padding: 20px;
+  margin: 0px;
+  width: 100%;
+  /* Position this hyperlink to bottom */
+  bottom: 0;
+}

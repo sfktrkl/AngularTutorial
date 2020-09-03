@@ -1,0 +1,12 @@
+p{
+  background-color: skyblue;
+  /* Align text to center */
+  text-align: center;
+  /* Fix the position, so it will always be in the top */
+  position: fixed;
+  padding: 20px;
+  margin: 0px;
+  width: 100%;
+  /* Position this paragraph to top */
+  top: 0;
+}

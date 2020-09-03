@@ -9,12 +9,18 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UsersModule } from './users/users.module'
 
 // Import angular forms module
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+
+// Import header and footer components
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserListComponent
+    UserListComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   // Register the exported module.
   // Now all components inside the module can be accessed.
