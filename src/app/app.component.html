@@ -161,3 +161,13 @@
   </tr>
 </table>
 
+<!-- Angular forms -->
+<h1>Angular Forms</h1>
+<!-- Use ngSubmit event to get values by pressing the button -->
+<form #simpleForm="ngForm" (ngSubmit)="getFormValues(simpleForm.value)">
+  <!-- Use ngModel to add field to the form values -->
+  <input type="text" ngModel name="user" placeholder="Name" /><br>
+  <input type="text" ngModel name="age" placeholder="Age" /><br>
+  <input type="password" ngModel name="password" placeholder="Password" /><br>
+  <button>(ngSubmit)="getValues(simpleForm.value)"</button>
+</form>

@@ -8,6 +8,9 @@ import { UserListComponent } from './user-list/user-list.component';
 // Import the exported module
 import { UsersModule } from './users/users.module'
 
+// Import angular forms module
+import { FormsModule } from '@angular/forms'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +21,8 @@ import { UsersModule } from './users/users.module'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UsersModule
+    UsersModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

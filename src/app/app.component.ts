@@ -54,4 +54,7 @@ export class AppComponent {
     { name: 'c', age: 3 },
     { name: 'd', age: 4 }
   ];
+
+  // Create a method to get values from the form
+  getFormValues(value) { console.warn(value); }
 }
