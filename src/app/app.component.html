@@ -204,3 +204,19 @@
   <ngb-alert [type]="alert.type" (close)="close(alert)">{{ alert.message }}</ngb-alert>
 </p>
 <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+
+<!-- Angular Material -->
+<h1>Angular Material</h1>
+<!-- Angular mat-button -->
+<!-- https://material.angular.io/components/button/examples -->
+<h2>Angular mat-button</h2>
+<button mat-button color="primary">Angular material button</button>
+<button mat-flat-button color="primary">Primary</button>
+<button mat-flat-button color="accent">Accent</button>
+<button mat-flat-button color="warn">Warn</button>
+<button mat-flat-button disabled>Disabled</button>
+<!-- Angular mat-slider -->
+<!-- https://material.angular.io/components/slider/examples -->
+<h2>Angular mat-slider</h2>
+<mat-slider max="10" min="1" color="accent"></mat-slider>
+<mat-slider step="4" tickinterval="3" color="accent"></mat-slider>

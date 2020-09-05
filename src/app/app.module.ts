@@ -20,6 +20,14 @@ import { FooterComponent } from './footer/footer.component';
 // ng add @ng-bootstrap/bootstrap (It will override the styles!)
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+// Installation of material
+// https://material.angular.io/
+// ng add @angular/material (It will override the styles!)
+// While adding material animations module is also added
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button'
+import { MatSliderModule } from '@angular/material/slider'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +42,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     UsersModule,
     FormsModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
