@@ -1,6 +1,7 @@
 /* Assign margin and padding properties of body.
    It should not overlap with the header and footer. */
 body{
-  margin: 20px 0px 20px 0px;
+  /* Since styles are changed with the bootstrap update the margin. */
+  margin: 50px 0px 20px 0px;
   padding: 20px 0px 60px 0px;
 }

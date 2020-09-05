@@ -1,5 +1,17 @@
 import { Component } from '@angular/core';
 
+interface Alert {
+  type: string;
+  message: string;
+}
+
+const ALERTS: Alert[] = [
+  {
+    type: 'success',
+    message: 'Success',
+  }
+];
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -64,4 +76,9 @@ export class AppComponent {
   // Create a property to use as condition while style binding
   condition = true;
   updateCondition() { this.condition = !this.condition; }
+
+  // Create methods to use with bootstrap
+  alerts = Array.from(ALERTS);
+  close(alert: Alert) { this.alerts.splice(this.alerts.indexOf(alert), 1); }
+  reset() { this.alerts = Array.from(ALERTS); }
 }

@@ -189,3 +189,18 @@
 <!-- Use a condition to change the color -->
 <p [style.color]="condition ? 'red' : 'green'" [style.backgroundColor]="'black'">Conditional Color</p>
 <button (click)="updateCondition()">updateCondition()</button>
+
+<!-- Angular Bootstrap -->
+<h1>Angular Bootstrap</h1>
+<!-- https://ng-bootstrap.github.io/#/components/alert/examples -->
+<!-- Basic Alert -->
+<p>
+  <ngb-alert [dismissible]="false">
+    <strong>Warning!</strong>
+  </ngb-alert>
+</p>
+<!-- Closable Alert -->
+<p *ngFor="let alert of alerts">
+  <ngb-alert [type]="alert.type" (close)="close(alert)">{{ alert.message }}</ngb-alert>
+</p>
+<button type="button" class="btn btn-primary" (click)="reset()">Reset</button>

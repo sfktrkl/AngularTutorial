@@ -13,7 +13,12 @@ import { FormsModule } from '@angular/forms';
 
 // Import header and footer components
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component'
+import { FooterComponent } from './footer/footer.component';
+
+// Installation of bootstrap
+// https://ng-bootstrap.github.io/#/home
+// ng add @ng-bootstrap/bootstrap (It will override the styles!)
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -28,7 +33,8 @@ import { FooterComponent } from './footer/footer.component'
     BrowserModule,
     AppRoutingModule,
     UsersModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
