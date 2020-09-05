@@ -179,3 +179,13 @@
      positions to top and bottom of the page. -->
 <app-header></app-header>
 <app-footer></app-footer>
+
+<!-- Angular style binding -->
+<h1>Angular Style Binding</h1>
+<p style="color: red">Red</p>
+<p [style.color]="'green'" [style.backgroundColor]="'black'">Green</p>
+<p [style.color]="colorToBind" [style.backgroundColor]="'black'">Yellow</p>
+<button (click)="updateColor()">updateColor()</button>
+<!-- Use a condition to change the color -->
+<p [style.color]="condition ? 'red' : 'green'" [style.backgroundColor]="'black'">Conditional Color</p>
+<button (click)="updateCondition()">updateCondition()</button>

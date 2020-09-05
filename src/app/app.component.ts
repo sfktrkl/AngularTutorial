@@ -57,4 +57,11 @@ export class AppComponent {
 
   // Create a method to get values from the form
   getFormValues(value) { console.warn(value); }
+
+  // Define a color to use in style binding
+  colorToBind = 'yellow';
+  updateColor() { this.colorToBind = 'blue'; }
+  // Create a property to use as condition while style binding
+  condition = true;
+  updateCondition() { this.condition = !this.condition; }
 }
