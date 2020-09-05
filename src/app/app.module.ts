@@ -26,14 +26,18 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // While adding material animations module is also added
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button'
-import { MatSliderModule } from '@angular/material/slider'
+import { MatSliderModule } from '@angular/material/slider';
+
+// Import a child component (pass data)
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ChildComponent
   ],
   // Register the exported module.
   // Now all components inside the module can be accessed.

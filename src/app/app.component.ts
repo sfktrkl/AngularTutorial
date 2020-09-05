@@ -81,4 +81,12 @@ export class AppComponent {
   alerts = Array.from(ALERTS);
   close(alert: Alert) { this.alerts.splice(this.alerts.indexOf(alert), 1); }
   reset() { this.alerts = Array.from(ALERTS); }
+
+  // Create properties to pass to child component
+  dataToPass = 'Data passed to child component';
+  objectToPass =
+    {
+      name: 'A Name',
+      age: 1
+    };
 }
