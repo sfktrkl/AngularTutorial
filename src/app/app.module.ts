@@ -34,6 +34,9 @@ import { ChildComponent } from './child/child.component';
 // Import a child component (reusable component)
 import { Child2Component } from './child2/child2.component';
 
+// Import a child component (get data)
+import { Child3Component } from './child3/child3.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +44,8 @@ import { Child2Component } from './child2/child2.component';
     HeaderComponent,
     FooterComponent,
     ChildComponent,
-    Child2Component
+    Child2Component,
+    Child3Component
   ],
   // Register the exported module.
   // Now all components inside the module can be accessed.

@@ -230,3 +230,8 @@
 <div *ngFor="let item of arrayToPass">
   <app-child2 [input]="item"></app-child2>
 </div>
+
+<!-- Send data from child to parent component -->
+<h1>Send Data from Child to Parent Component</h1>
+<p>name: {{takenData.name}}, age: {{takenData.age}}</p>
+<app-child3 (getData)="getData($event)"></app-child3>

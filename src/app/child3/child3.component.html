@@ -1,0 +1,5 @@
+<form #form="ngForm" (ngSubmit)="sendData(form.value)">
+  <input type="text" ngModel name="name" placeholder="Name" /><br>
+  <input type="text" ngModel name="age" placeholder="Age" /><br>
+  <button>sendData(form.value)</button>
+</form>

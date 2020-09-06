@@ -101,4 +101,8 @@ export class AppComponent {
       age: 'd'
     }
   ];
+
+  // Create a method to get data from child
+  getData(data) { this.takenData = data; }
+  takenData = { name: null, age: null }
 }
