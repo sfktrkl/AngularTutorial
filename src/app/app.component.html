@@ -235,3 +235,20 @@
 <h1>Send Data from Child to Parent Component</h1>
 <p>name: {{takenData.name}}, age: {{takenData.age}}</p>
 <app-child3 (getData)="getData($event)"></app-child3>
+
+<!-- Angular pipes -->
+<h1>Angular Pipes</h1>
+<h2>Pipes with strings</h2>
+<p>{{s | uppercase}}</p>
+<p>{{s | titlecase}}</p>
+<p>{{s | lowercase}}</p>
+<h2>Pipes with dates</h2>
+<p>{{d | date}}</p>
+<p>{{d | date:'fullDate'}}</p>
+<h2>Pipes with slice</h2>
+<p>{{s | slice:2}}</p>
+<p>{{s | slice:2:3}}</p>
+<h2>Pipes with currency</h2>
+<p>{{m | currency:'USD'}}</p>
+<p>{{m | currency:'EUR'}}</p>
+

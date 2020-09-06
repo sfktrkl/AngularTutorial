@@ -105,4 +105,9 @@ export class AppComponent {
   // Create a method to get data from child
   getData(data) { this.takenData = data; }
   takenData = { name: null, age: null }
+
+  // Create properties to use with pipes
+  s = 'NamE';
+  d = Date.now();
+  m = 5821;
 }
