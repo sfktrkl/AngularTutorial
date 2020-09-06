@@ -31,13 +31,17 @@ import { MatSliderModule } from '@angular/material/slider';
 // Import a child component (pass data)
 import { ChildComponent } from './child/child.component';
 
+// Import a child component (reusable component)
+import { Child2Component } from './child2/child2.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
     HeaderComponent,
     FooterComponent,
-    ChildComponent
+    ChildComponent,
+    Child2Component
   ],
   // Register the exported module.
   // Now all components inside the module can be accessed.

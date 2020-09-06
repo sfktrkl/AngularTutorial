@@ -89,4 +89,16 @@ export class AppComponent {
       name: 'A Name',
       age: 1
     };
+
+  // Create a property to pass to child2 component
+  arrayToPass = [
+    {
+      name: 'a',
+      age: 'b'
+    },
+    {
+      name: 'c',
+      age: 'd'
+    }
+  ];
 }

@@ -224,3 +224,9 @@
 <!-- Pass data from parent to child component -->
 <h1>Pass Data from Parent to Child Component</h1>
 <app-child [input]="dataToPass" [objectInput]="objectToPass"></app-child>
+
+<!-- Reusable component -->
+<h1>Reusable component</h1>
+<div *ngFor="let item of arrayToPass">
+  <app-child2 [input]="item"></app-child2>
+</div>
