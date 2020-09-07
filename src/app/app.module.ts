@@ -44,6 +44,9 @@ import { AdminComponent } from './admin/admin.component';
 // Import component for 404 Page
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
+// Import the custom directive
+import { CustomStyleDirective } from './custom-style.directive';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,7 +58,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     Child3Component,
     UserComponent,
     AdminComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CustomStyleDirective
   ],
   // Register the exported module.
   // Now all components inside the module can be accessed.
