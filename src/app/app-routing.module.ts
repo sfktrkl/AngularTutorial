@@ -5,6 +5,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { AdminComponent } from "./admin/admin.component"
 import { UserComponent } from "./user/user.component"
 
+// Import component for 404 Page
+import { PageNotFoundComponent } from "./page-not-found/page-not-found.component"
+
 const routes: Routes = [
   {
     path: 'user',
@@ -13,6 +16,16 @@ const routes: Routes = [
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'user',
+    component: UserComponent,
+    outlet: 'notFound'        // Define outlet name, so it will be use to define multiple router-outlets.
+  },
+  {
+    path: '**',               // ** meaning wildcard routing, it will be called when route can not be found.
+    component: PageNotFoundComponent,
+    outlet: 'notFound'
   }
 ];
 

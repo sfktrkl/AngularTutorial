@@ -41,6 +41,9 @@ import { Child3Component } from './child3/child3.component';
 import { UserComponent } from './user/user.component';
 import { AdminComponent } from './admin/admin.component';
 
+// Import component for 404 Page
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +54,8 @@ import { AdminComponent } from './admin/admin.component';
     Child2Component,
     Child3Component,
     UserComponent,
-    AdminComponent
+    AdminComponent,
+    PageNotFoundComponent
   ],
   // Register the exported module.
   // Now all components inside the module can be accessed.
