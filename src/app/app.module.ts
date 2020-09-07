@@ -37,6 +37,10 @@ import { Child2Component } from './child2/child2.component';
 // Import a child component (get data)
 import { Child3Component } from './child3/child3.component';
 
+// Import components which will used in the routing
+import { UserComponent } from './user/user.component';
+import { AdminComponent } from './admin/admin.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +49,9 @@ import { Child3Component } from './child3/child3.component';
     FooterComponent,
     ChildComponent,
     Child2Component,
-    Child3Component
+    Child3Component,
+    UserComponent,
+    AdminComponent
   ],
   // Register the exported module.
   // Now all components inside the module can be accessed.
