@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Injector } from '@angular/core';
+
+// Import users service to access its data
+import { UsersService } from './users.service'
 
 interface Alert {
   type: string;
@@ -110,4 +113,15 @@ export class AppComponent {
   s = 'NamE';
   d = Date.now();
   m = 5821;
+
+  // Inject an injector inside the constructor
+  // to be able to inject other modules without constructor injection
+  constructor(private injector: Injector) { }
+
+  // Inject the users service
+  usersService = this.injector.get(UsersService);
+
+  // Create a method to get data from service
+  takeDataFromService() { this.nameFromService = this.usersService.getData().name; }
+  nameFromService = "";
 }
