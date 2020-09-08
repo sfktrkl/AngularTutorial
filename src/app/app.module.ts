@@ -47,6 +47,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 // Import the custom directive
 import { CustomStyleDirective } from './custom-style.directive';
 
+// Import http client module to be able to get data from database
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -71,7 +74,8 @@ import { CustomStyleDirective } from './custom-style.directive';
     NgbModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatSliderModule
+    MatSliderModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

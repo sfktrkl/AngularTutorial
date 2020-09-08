@@ -124,4 +124,8 @@ export class AppComponent {
   // Create a method to get data from service
   takeDataFromService() { this.nameFromService = this.usersService.getData().name; }
   nameFromService = "";
+
+  // Create a method to get data from api
+  takeDataFromAPI() { this.usersService.getDataFromAPI().subscribe(data => { this.dataFromAPI = data; }); }
+  dataFromAPI;
 }

@@ -278,3 +278,19 @@
 <h1>Angular Services</h1>
 <p>{{nameFromService}}</p>
 <button (click)="takeDataFromService()">takeDataFromService()</button>
+
+<!-- Angular call api -->
+<h1>Angular Call API</h1>
+<table border="1">
+  <tr>
+    <td>user id</td>
+    <td>id</td>
+    <td>title</td>
+  </tr>
+  <tr *ngFor="let item of dataFromAPI">
+    <td>{{item.userId}}</td>
+    <td>{{item.id}}</td>
+    <td>{{item.title}}</td>
+  </tr>
+</table>
+<button (click)="takeDataFromAPI()">takeDataFromAPI()</button>
