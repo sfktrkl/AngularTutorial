@@ -26,6 +26,13 @@ const routes: Routes = [
     path: '**',               // ** meaning wildcard routing, it will be called when route can not be found.
     component: PageNotFoundComponent,
     outlet: 'notFound'
+  },
+  {
+    path: 'lazyLoading',
+    outlet: 'lazy',
+    // This module should not be imported any where else.
+    // Otherwise it is not lazy loading any more.
+    loadChildren: () => import('./lazy-loading/lazy-loading.module').then(mod => mod.LazyLoadingModule),
   }
 ];
 

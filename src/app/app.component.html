@@ -301,3 +301,8 @@
 <p><a [routerLink]="[{ outlets: { login: ['user', 'login'] } }]">User Login</a></p>
 <router-outlet name="login"></router-outlet>
 
+<!-- Lazy loading -->
+<h1>Lazy Loading</h1>
+<p><a [routerLink]="[{ outlets: { lazy: ['lazyLoading', 'login'] } }]">Lazy Loading Login</a></p>
+<p><a [routerLink]="[{ outlets: { lazy: ['lazyLoading', 'signup'] } }]">Lazy Loading Signup</a></p>
+<router-outlet name="lazy"></router-outlet>
