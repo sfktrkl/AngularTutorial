@@ -294,3 +294,10 @@
   </tr>
 </table>
 <button (click)="takeDataFromAPI()">takeDataFromAPI()</button>
+
+<!-- Angular group routing -->
+<h1>Angular Group Routing</h1>
+<p><a [routerLink]="[{ outlets: { login: ['admin', 'login'] } }]">Admin Login</a></p>
+<p><a [routerLink]="[{ outlets: { login: ['user', 'login'] } }]">User Login</a></p>
+<router-outlet name="login"></router-outlet>
+

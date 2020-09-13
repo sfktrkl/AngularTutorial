@@ -50,6 +50,9 @@ import { CustomStyleDirective } from './custom-style.directive';
 // Import http client module to be able to get data from database
 import { HttpClientModule } from '@angular/common/http';
 
+// Import admin module for group routing
+import { AdminModule } from './admin/admin.module'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -75,7 +78,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MatButtonModule,
     MatSliderModule,
-    HttpClientModule
+    HttpClientModule,
+    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]

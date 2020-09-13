@@ -7,6 +7,9 @@ import { SignupComponent } from './signup/signup.component';
 // For example, an application for a users, user is a complete module and user-login
 // use-signup and user-profil. Basically module is a collection of components.
 
+// Add a routing module to users module for group routing
+import { UsersRoutingModule } from './users-routing.module';
+
 // ng g m users
 @NgModule({
   // Declare the components
@@ -17,7 +20,8 @@ import { SignupComponent } from './signup/signup.component';
   // Export the components
   exports: [
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    UsersRoutingModule
   ]
 })
 export class UsersModule { }
