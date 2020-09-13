@@ -6,6 +6,9 @@ import { UsersService } from './users.service'
 // Import the data type from service
 import { user } from './users.service'
 
+// Import classes for lazy loading component
+import { ViewContainerRef, ComponentFactoryResolver } from '@angular/core';
+
 interface Alert {
   type: string;
   message: string;
@@ -141,5 +144,24 @@ export class AppComponent {
       isRegistered: true,
     }
     return data;
+  }
+
+  // Make intances of classes which will be used in lazy loading component
+  // ViewContainerRef will create a container like div, paragraph.
+  vcr = this.injector.get(ViewContainerRef);
+  // ComponentFactoryResolver will execute the code and generate the component
+  cfr = this.injector.get(ComponentFactoryResolver);
+
+  // Define methods which will be used to load components
+  // This will generate a promise, so use async/await
+  async loadLogin() {
+    this.vcr.clear();
+    const { LoginComponent } = await import('./lazy-loading/login/login.component');
+    this.vcr.createComponent(this.cfr.resolveComponentFactory(LoginComponent));
+  }
+  async loadSignup() {
+    this.vcr.clear();
+    const { SignupComponent } = await import('./lazy-loading/signup/signup.component');
+    this.vcr.createComponent(this.cfr.resolveComponentFactory(SignupComponent));
   }
 }

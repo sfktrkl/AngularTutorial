@@ -306,3 +306,8 @@
 <p><a [routerLink]="[{ outlets: { lazy: ['lazyLoading', 'login'] } }]">Lazy Loading Login</a></p>
 <p><a [routerLink]="[{ outlets: { lazy: ['lazyLoading', 'signup'] } }]">Lazy Loading Signup</a></p>
 <router-outlet name="lazy"></router-outlet>
+
+<!-- Lazy loading component -->
+<h1>Lazy Loading Component</h1>
+<button (click)="loadLogin()">loadLogin()</button>
+<button (click)="loadSignup()">loadSignup()</button>
