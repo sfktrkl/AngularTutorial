@@ -3,6 +3,9 @@ import { Component, Injector } from '@angular/core';
 // Import users service to access its data
 import { UsersService } from './users.service'
 
+// Import the data type from service
+import { user } from './users.service'
+
 interface Alert {
   type: string;
   message: string;
@@ -128,4 +131,15 @@ export class AppComponent {
   // Create a method to get data from api
   takeDataFromAPI() { this.usersService.getDataFromAPI().subscribe(data => { this.dataFromAPI = data; }); }
   dataFromAPI;
+
+  // Create a method to return a data with by using an interface
+  getUserData() {
+    const data:user = {
+      name: "a name",
+      id: 10,
+      address: "some place",
+      isRegistered: true,
+    }
+    return data;
+  }
 }

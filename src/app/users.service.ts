@@ -3,6 +3,15 @@ import { Injectable, Injector } from '@angular/core';
 // Import http client to be able to get data from database
 import { HttpClient } from '@angular/common/http';
 
+// Create an interface to be able to use inside the components
+// It provides data structure validation.
+export interface user {
+  name: string,
+  id: number,
+  address: any
+  isRegistered: boolean,
+}
+
 @Injectable({
   providedIn: 'root'
 })
