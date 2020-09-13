@@ -311,3 +311,21 @@
 <h1>Lazy Loading Component</h1>
 <button (click)="loadLogin()">loadLogin()</button>
 <button (click)="loadSignup()">loadSignup()</button>
+
+<!-- Bootstrap form -->
+<h1>Bootstrap form</h1>
+<!-- https://getbootstrap.com/docs/4.0/components/forms/ -->
+<!-- Use a division to change form width -->
+<div class="col-sm-3">
+  <form>
+    <div class="form-group">
+      <label for="emailInput">Email address</label>
+      <input type="email" class="form-control" id="emailInput" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="passInput">Password</label>
+      <input type="password" class="form-control" id="passInput" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
