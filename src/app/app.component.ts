@@ -9,6 +9,10 @@ import { user } from './users.service'
 // Import classes for lazy loading component
 import { ViewContainerRef, ComponentFactoryResolver } from '@angular/core';
 
+// Import form group and form control for reactive forms
+import { FormGroup } from '@angular/forms'
+import { FormControl } from '@angular/forms'
+
 interface Alert {
   type: string;
   message: string;
@@ -174,4 +178,10 @@ export class AppComponent {
     adress: "some place",
     mobile: "12803712",
   }
+
+  // Define a reactive form
+  reactiveForm = new FormGroup({
+    username: new FormControl(''),
+    password: new FormControl(''),
+  })
 }

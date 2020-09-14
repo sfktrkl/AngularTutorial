@@ -53,6 +53,9 @@ import { HttpClientModule } from '@angular/common/http';
 // Import admin module for group routing
 import { AdminModule } from './admin/admin.module'
 
+// Import reactive form module
+import { ReactiveFormsModule } from '@angular/forms'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -79,7 +82,8 @@ import { AdminModule } from './admin/admin.module'
     MatButtonModule,
     MatSliderModule,
     HttpClientModule,
-    AdminModule
+    AdminModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

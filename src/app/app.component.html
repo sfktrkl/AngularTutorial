@@ -378,3 +378,11 @@
   <div><input type="text" name="mobile" [ngModel]="preFillData.mobile"></div>
   <button type="submit">Submit</button>
 </form>
+
+<!-- Reactive form -->
+<h1>Reactive Form</h1>
+<form [formGroup]="reactiveForm" (ngSubmit)="onSubmit(reactiveForm.value)">
+  <div><input type="text" name="username" formControlName="username" placeholder="Username"></div>
+  <div><input type="password" name="password" formControlName="password" placeholder="Password"></div>
+  <button type="submit">Login</button>
+</form>
