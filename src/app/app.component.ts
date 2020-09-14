@@ -164,4 +164,7 @@ export class AppComponent {
     const { SignupComponent } = await import('./lazy-loading/signup/signup.component');
     this.vcr.createComponent(this.cfr.resolveComponentFactory(SignupComponent));
   }
+
+  // Create method to get data from bootstrap form for validation
+  onSubmit(data) { console.warn(data); }
 }
