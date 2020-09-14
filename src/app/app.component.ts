@@ -13,6 +13,9 @@ import { ViewContainerRef, ComponentFactoryResolver } from '@angular/core';
 import { FormGroup } from '@angular/forms'
 import { FormControl } from '@angular/forms'
 
+// Import validators for validation of reactive forms
+import { Validators } from '@angular/forms'
+
 interface Alert {
   type: string;
   message: string;
@@ -184,4 +187,13 @@ export class AppComponent {
     username: new FormControl(''),
     password: new FormControl(''),
   })
+
+  // Define a reactive form for validation
+  validatedReactiveForm = new FormGroup({
+    email: new FormControl('', Validators.required),
+    password: new FormControl(''),
+  })
+
+  // Define a method to get email from reactive form to validate
+  get reactiveFormEmail() { return this.validatedReactiveForm.get('email'); }
 }
