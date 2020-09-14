@@ -370,3 +370,11 @@
   </form>
 </div>
 
+<!-- Pre filled form -->
+<h1>Pre Filled Form</h1>
+<form #preFilledForm="ngForm" (ngSubmit)="onSubmit(preFilledForm.value)">
+  <div><input type="text" name="email" [ngModel]="preFillData.email"></div>
+  <div><input type="text" name="address" [ngModel]="preFillData.adress"></div>
+  <div><input type="text" name="mobile" [ngModel]="preFillData.mobile"></div>
+  <button type="submit">Submit</button>
+</form>

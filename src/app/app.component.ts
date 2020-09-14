@@ -167,4 +167,11 @@ export class AppComponent {
 
   // Create method to get data from bootstrap form for validation
   onSubmit(data) { console.warn(data); }
+
+  // Define data to pre fill form
+  preFillData = {
+    email: "test@test.com",
+    adress: "some place",
+    mobile: "12803712",
+  }
 }
