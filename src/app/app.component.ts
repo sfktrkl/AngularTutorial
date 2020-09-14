@@ -196,4 +196,17 @@ export class AppComponent {
 
   // Define a method to get email from reactive form to validate
   get reactiveFormEmail() { return this.validatedReactiveForm.get('email'); }
+
+  // Define a reactive form for full validation
+  fullValidatedReactiveForm = new FormGroup({
+    email: new FormControl('', [Validators.required, Validators.email]),
+    password: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(10)]),
+    address: new FormControl('', [Validators.required, Validators.pattern('[a-zA-Z ]*')]),
+  })
+
+  // Define a method to get fields from reactive form and to validate
+  validateField(fieldName) {
+    var field = this.fullValidatedReactiveForm.get(fieldName);
+    return field.invalid && field.touched;
+  }
 }
