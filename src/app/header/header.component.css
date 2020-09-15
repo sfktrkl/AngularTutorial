@@ -9,4 +9,6 @@ p{
   width: 100%;
   /* Position this paragraph to top */
   top: 0;
+  /* Arrange z index to see header on front */
+  z-index: 1;
 }

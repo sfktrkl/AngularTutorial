@@ -9,4 +9,6 @@ a{
   width: 100%;
   /* Position this hyperlink to bottom */
   bottom: 0;
+  /* Arrange z index to see footer on front */
+  z-index: 1;
 }
