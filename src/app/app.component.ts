@@ -34,7 +34,7 @@ const ALERTS: Alert[] = [
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Tutorial!';                   // This is the application title which is {{title}}
+  title = 'Tutorial';                   // This is the application title which is {{title}}
   appName = 'appName is Tutorial';       // This is the application name which is {{appName}}
 
   // These are the properties of the class

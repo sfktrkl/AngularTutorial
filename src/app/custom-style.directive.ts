@@ -6,8 +6,10 @@ import { Directive, ElementRef } from '@angular/core';
 export class CustomStyleDirective {
 
   constructor(private el: ElementRef) {
-    // Change the color of the html element
-    el.nativeElement.style.color = "red";
+    if (el != null && el.nativeElement != null && el.nativeElement.style != null) {
+      // Change the color of the html element
+      el.nativeElement.style.color = "red";
+    }
   }
 
 }
