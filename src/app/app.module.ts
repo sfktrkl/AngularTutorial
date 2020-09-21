@@ -56,6 +56,9 @@ import { AdminModule } from './admin/admin.module'
 // Import reactive form module
 import { ReactiveFormsModule } from '@angular/forms'
 
+// Import component to create some tests
+import { TestComponent } from './test/test.component'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,7 +71,8 @@ import { ReactiveFormsModule } from '@angular/forms'
     UserComponent,
     AdminComponent,
     PageNotFoundComponent,
-    CustomStyleDirective
+    CustomStyleDirective,
+    TestComponent
   ],
   // Register the exported module.
   // Now all components inside the module can be accessed.
